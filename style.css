@@ -1,0 +1,244 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+h3 {
+    color: orange;
+}
+
+header {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1000;
+    background-color: #BE1622;
+    padding: 24px;
+    color: #fff;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo img {
+    height: 100px;
+}
+
+
+.nav-logo h2 {
+    margin-left: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+
+main {
+    width: 62%;
+    margin: 0 auto;
+}
+
+video {
+    width: 100%;
+}
+
+iframe {
+    width: 100%;
+}
+
+footer {
+    background-color: #34516C;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10rem;
+    padding: 20px;
+    color: white;
+    margin-top: 14px;
+}
+
+footer a {
+    color: #007FB0;
+    text-decoration: underline;
+}
+
+#products>ul>li {
+    display: inline-block;
+    margin-right: 14px;
+}
+
+#products>ul>li>a {
+    color: #007FB0;
+    text-decoration: underline;
+}
+
+
+.products-contents {
+    background-color: lightgrey;
+    padding: 14px;
+    height: 280px;
+}
+
+#product-container>#hoodie,
+#product-container>#jumper,
+#product-container>#tshirt {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+
+}
+
+#product-container>#hoodie>div,
+#product-container>#jumper>div,
+#product-container>#tshirt>div {
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    width: 280px;
+}
+
+
+#product-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+#product-container .btn {
+    text-align: center;
+    border: none;
+}
+
+
+#btn-top {
+    position: fixed;
+    top: 300px;
+    left: 10px;
+    background-color: #007FB0;
+    border-radius: 50px;
+    padding: 15px 12px;
+}
+
+#btn-top a {
+    color: white;
+}
+
+.read-more {
+    text-decoration: underline;
+}
+
+
+#item-details {
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    margin-top: 14px;
+
+}
+
+.items-contents {
+    background-color: lightgrey;
+    padding: 14px;
+}
+
+#item-details .item-img {
+    text-align: center;
+}
+
+#item-details img {
+    width: 500px;
+    height: auto;
+}
+
+#item-details .btn {
+    text-align: center;
+}
+
+
+table {
+    width: 100%;
+    text-align: center;
+}
+
+
+
+
+@media (max-width: 768px) {
+
+    .nav-logo img {
+        height: 50px;
+    }
+
+
+    nav ul li {
+        display: inline-block;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+        cursor: pointer;
+    }
+
+
+    .nav-menu.display {
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #34516C;
+        width: 100%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+    }
+
+
+    main {
+        padding: 2%;
+        width: 100%;
+    }
+
+    #product-container>#hoodie>div,
+    #product-container>#jumper>div,
+    #product-container>#tshirt>div {
+        width: 100%;
+    }
+
+    #product-container {
+        padding: 20px;
+    }
+
+
+}
